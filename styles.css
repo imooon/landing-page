@@ -2,37 +2,53 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box; /* check */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Part one */
-
 .part-one {
     background-color: #1f2937;
     color: #fff;
+    text-align: center; /* check */
+    padding: 40px 20px; /* check */
 }
 
 .navbar {
     display: flex;
-}
-
-.links {
-    justify-content: flex-end;
+    justify-content: space-between; /* check */
+    align-items: center;
+    padding: 10px 20px;
+    background: #1f2937;
 }
 
 .header-logo {
     font-size: 24px;
+    font-weight: bold;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.links a:hover {
+    text-decoration: underline;
 }
 
 .hero-main-text {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
+    margin: 20px 0;
 }
 
 .hero-sub-text {
-    font-size: 12px;
+    font-size: 16px;
     color: #f9faf8;
+    margin-bottom: 20px;
 }
 
 .hero-button {
@@ -40,78 +56,133 @@
     color: #fff;
     border-radius: 12px;
     padding: 12px 32px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
+
+.hero-button:hover {
+    background-color: #2863d0; /* Darker blue for hover effect */
+}
+
 .image-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hero-image {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the image */
 }
 
 /* Part two */
 
 .part-two {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; 
+    background-color: #f9faf8;
+    padding: 40px 20px;
 }
 
 .information-title {
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
-    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Increased gap for better spacing */
+    justify-content: center; /* Center the cards */
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+    width: 220px; /* Adjust width as needed */
+    text-align: center;
+    padding: 20px;
 }
 
 .card-image {
-   flex: auto;
-   border: 2px solid #3882f6;;
-   display: flex;
+    width: 100%;
+    height: 150px; /* Fixed height for the image */
+    border: 2px solid #3882f6; /* Blue border around the image */
+    background-color: lightgray; /* Placeholder background color */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-bottom: 10px;
+}
+
+.card-subtext {
+    font-size: 14px; /* Slightly larger font size for readability */
+    color: #1f2937;
 }
 
 /* Part three */
 
 .part-three {
     background-color: #e5e7eb;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .quote {
     font-size: 36px;
     font-style: italic;
     font-weight: 100;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .quote-from {
-    display: flex;
-    justify-content: flex-end;
     font-size: 24px;
     color: #1f2937;
+    margin-top: 10px;
 }
 
-/* Part four */
-
-.action-container {
-    display: flex;
-    justify-content: center;
+/* Part Four */
+.part-four {
     background-color: #3882f6;
-    border-radius: 12px;
-    margin: 100px 0;
-    padding: 54px;
-    font-size: 18px;
-    align-items: center;
-    gap: 120px;
+    padding: 40px 20px;
+    text-align: center;
     color: #e5e7eb;
-    flex-wrap: wrap;
+}
+
+.action-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.action-subtext {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    background-color: #fff;
+    color: #3882f6;
+    border-radius: 12px;
+    padding: 12px 32px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #f9faf8;
+    color: #2863d0; /* Darker blue for hover effect */
 }
 
 /* Footer */
-
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
     background-color: #1f2937;
-    padding: 40px 0;
+    padding: 20px;
+    text-align: center;
     color: #fff;
 }
